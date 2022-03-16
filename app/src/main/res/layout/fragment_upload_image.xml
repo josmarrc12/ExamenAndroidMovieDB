@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.uploadImage.UploadImageFragment">
+
+    <TextView
+        android:id="@+id/lbl_choose_pictures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/padding_medium"
+        android:text="@string/choose_pictures"
+        android:textSize="@dimen/text_title"
+        />
+
+    <ImageView
+        android:id="@+id/iv_choose_pictures"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_cloud_upload"
+        map:layout_constraintTop_toBottomOf="@id/lbl_choose_pictures"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        map:tint="@color/blue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_images"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        map:layout_constraintTop_toBottomOf="@id/iv_choose_pictures"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="@dimen/padding_medium"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_images" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "731010728028",
+    "project_id": "moviedb-6ceb6",
+    "storage_bucket": "moviedb-6ceb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731010728028:android:434b530b6a8c537c12e699",
+        "android_client_info": {
+          "package_name": "com.osmar.examen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731010728028-p820v5qvr5uht9qsf1e2e1lcr3imu91c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC98j6w-XmhFXzt2eT97Jy_z--5rJftvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731010728028-p820v5qvr5uht9qsf1e2e1lcr3imu91c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

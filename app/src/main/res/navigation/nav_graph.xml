@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/movies_list">
+    <fragment
+        android:id="@+id/movies_list"
+        android:name="com.osmar.examen.ui.moviesList.MoviesListFragment"
+        android:label="@string/Movies"
+        tools:layout="@layout/fragment_catalog_movies">
+        <action
+            android:id="@+id/movies_list_to_movie_details"
+            app:destination="@id/movie_details">
+            <argument
+                android:name="movieId"
+                app:argType="long"/>
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/movie_details"
+        android:name="com.osmar.examen.ui.movieDetails.MovieDetailsFragment"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_movie_details">
+        <argument
+            android:name="movieId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/directions"
+        android:name="com.osmar.examen.ui.directions.DirectionsFragment"
+        android:label="@string/directions"
+        tools:layout="@layout/fragment_directions">
+    </fragment>
+
+    <fragment
+        android:id="@+id/upload_pictures"
+        android:name="com.osmar.examen.ui.uploadImage.UploadImageFragment"
+        android:label="@string/upload_pictures"
+        tools:layout="@layout/fragment_upload_image">
+    </fragment>
+
+
+
+
+</navigation>

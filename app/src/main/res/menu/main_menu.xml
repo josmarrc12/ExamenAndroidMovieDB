@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/my_directions"
+        android:icon="@drawable/ic_location"
+        android:title="@string/my_directions"
+        app:showAsAction="ifRoom"
+        android:iconTint="?attr/colorAccent"/>
+
+    <item
+        android:id="@+id/upload_pictures"
+        android:icon="@drawable/ic_cloud_upload"
+        android:title="@string/upload_pictures"
+        app:showAsAction="ifRoom"
+        android:iconTint="?attr/colorAccent"/>
+</menu>
